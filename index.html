@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Parcial</title>
+
+</head>
+
+<body>
+    <h1>Parcial 1 Labo3</h1>
+
+    <fieldset>
+        <legend>Informacion del anuncio</legend>
+        <div class="divContainer">
+            <form id="formContainer">
+                <input type="hidden" name="id" />
+                <label for="">Titulo:</label><br>
+
+                <input class="txtForm" type="text" name="titulo" placeholder="Titulo" required /><br><br>
+                <fieldset class="FieldsetTransaccion">
+                    <label for="">Transaccion:</label><br>
+                    <input type="radio" name="transaccion" value="Venta" />Venta
+                    <input type="radio" name="transaccion" value="Alquiler" checked />Alquiler
+                </fieldset><br>
+                <label for="">Descripcion:</label><br>
+                <input class="txtForm" type="text" name="descripcion" placeholder="Descripcion" required /><br><br>
+                <label for="">Precio:</label><br>
+                <input class="txtForm" type="number" name="precio" placeholder="Precio" required /><br><br>
+                <div class="cantContainer">
+                    <input class="txtForm" type="number" name="puertas" placeholder="puertas" required />
+                    <input class="txtForm" type="number" name="kms" placeholder="Kms" required />
+                    <input class="txtForm" type="number" name="potencia" placeholder="Potencia" required />
+                </div><br>
+                <div id="spinnerContainer"></div>
+                <div id="btnFin">
+                    <input type="submit" class="btnSub" id="btnSubmit" value="Cargar">
+                    <input type="button" class="btnSub" id="btnEliminar" class="oculto" value="Eliminar">
+                </div>
+            </form>
+        </div>
+    </fieldset><br>
+    <div id="divLista"></div>
+</body>
+
+</html>
